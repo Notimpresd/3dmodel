@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>3D Product Catalog</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <h1>Catalog</h1>
+  <input type="text" id="searchInput" placeholder="Search models..." />
+
+  <div class="catalog-grid" id="catalog"></div>
+
+  <!-- Fullscreen Modal -->
+  <div class="modal" id="fullscreenModal">
+    <button class="close-btn" id="closeBtn">×</button>
+    <model-viewer
+      id="modalViewer"
+      src=""
+      alt="Fullscreen Model"
+      auto-rotate
+      camera-controls
+      shadow-intensity="1"
+      environment-image="neutral">
+    </model-viewer>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
