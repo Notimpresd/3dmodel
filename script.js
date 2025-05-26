@@ -8,7 +8,8 @@ const modal = document.getElementById("fullscreenModal");
 const modalViewer = document.getElementById("modalViewer");
 const closeBtn = document.getElementById("closeBtn");
 
-// Create each product cardfunction createProduct({ name, file }) {
+// Create each product cardfunction 
+createProduct({ name, file }) {
   const div = document.createElement("div");
   div.className = "product";
   div.dataset.name = name.toLowerCase();
