@@ -8,53 +8,32 @@ const modal = document.getElementById("fullscreenModal");
 const modalViewer = document.getElementById("modalViewer");
 const closeBtn = document.getElementById("closeBtn");
 
-// Create each product cardfunction 
-createProduct({ name, file }) {
+// Create each product card
+function createProduct({ name, file }) {
   const div = document.createElement("div");
   div.className = "product";
   div.dataset.name = name.toLowerCase();
 
   div.innerHTML = `
     <h3>${name}</h3>
-    <div class="model-container">
-      <model-viewer 
-        src="${file}" 
-        alt="${name}"
-        auto-rotate 
-        camera-controls 
-        shadow-intensity="1"
-        environment-image="neutral"
-        loading="eager"
+    <model-viewer 
+      src="${file}" 
+      alt="${name}"
+      auto-rotate 
+      camera-controls 
+      shadow-intensity="1"
+      environment-image="neutral"
+      loading="eager"
+      onclick="openModal('${file}')"
         interaction-prompt="none">
-      </model-viewer>
-    </div>
+    </model-viewer>
     <a href="${file}" download>
       <button class="download-btn">Download</button>
     </a>
   `;
 
-  // Drag detection
-  let isDragging = false;
-  const modelContainer = div.querySelector(".model-container");
-  const modelViewer = div.querySelector("model-viewer");
-
-  modelViewer.addEventListener("mousedown", () => {
-    isDragging = false;
-  });
-
-  modelViewer.addEventListener("mousemove", () => {
-    isDragging = true;
-  });
-
-  modelContainer.addEventListener("click", () => {
-    if (!isDragging) {
-      openModal(file);
-    }
-  });
-
   return div;
 }
-
 
 // Initialize catalog
 models.forEach(model => {
