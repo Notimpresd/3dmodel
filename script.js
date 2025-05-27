@@ -1,5 +1,6 @@
 const models = [
   { name: "Large pot", file: "Large pot.glb" },
+  { name: "Lunch cup", file: "Lunch cup.glb" },
   { name: "Lunch box 1", file: "Lunch box 1.glb" },
   { name: "Lunch box 3", file: "Lunch box 3.glb" }
 ];
