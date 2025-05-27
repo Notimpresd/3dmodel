@@ -1,8 +1,9 @@
 const models = [
-  { name: "Large pot", file: "Large pot.glb" },
-  { name: "Lunch cup", file: "Lunch cup.glb" },
+  { name: "Large pot 1", file: "Large pot 1.glb" },
+  { name: "Lunch cup 1", file: "Lunch cup 1.glb" },
   { name: "Lunch box 1", file: "Lunch box 1.glb" },
-  { name: "Lunch box 3", file: "Lunch box 3.glb" }
+  { name: "Cuttlery 1", file: "Cuttlery 1.glb" },
+  { name: "Lunch box kids 1", file: "Lunch box kids 1.glb" }
 ];
 
 const catalog = document.getElementById("catalog");
