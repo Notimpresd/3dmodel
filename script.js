@@ -1,10 +1,17 @@
 const models = [
-  { name: "Large pot 1", file: "Large pot 1.glb" },
-  { name: "Lunch cup 1", file: "Lunch cup 1.glb" },
-  { name: "Lunch box 1", file: "Lunch box 1.glb" },
-  { name: "Cuttlery 1", file: "Cuttlery 1.glb" },
-  { name: "Lunch box kids 1", file: "Lunch box kids 1.glb" }
+  { name: "Cuttlery - Pink", file: "Cuttlery - Pink.glb" },
+  { name: "Cuttlery - Turqoise", file: "Cuttlery - Turqoise.glb" },
+  { name: "Large pot - Blue", file: "Large pot - Blue.glb" },
+  { name: "Large pot - Green", file: "Large pot - Green.glb" },
+  { name: "Large pot - Pink", file: "Large pot - Pink.glb" },
+  { name: "Lunch box - Green", file: "Lunch box - Green.glb" },
+  { name: "Lunch box - Pink", file: "Lunch box - Pink.glb" },
+  { name: "Lunch box - Turqoise", file: "Lunch box - Turqoise.glb" },
+  { name: "Lunch box kids - Blue", file: "Lunch box kids - Blue.glb" },
+  { name: "Lunch box kids - Orange", file: "Lunch box kids - Orange.glb" },
+  { name: "Lunch cup", file: "Lunch cup.glb" }
 ];
+
 
 const catalog = document.getElementById("catalog");
 const searchInput = document.getElementById("searchInput");
